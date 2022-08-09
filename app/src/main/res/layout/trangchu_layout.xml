@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightwhite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/image"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/image"
+                android:layout_height="190dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                tools:ignore="MissingConstraints" />
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_displayhome_ThongKe"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_baseline_calendar_today_24"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="33dp"
+                            android:layout_margin="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="Doanh thu"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_displayhome_XemBan"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/ic_baseline_airline_seat_legroom_normal_24"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="Bàn ăn"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_displayhome_XemMenu"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_baseline_add_circle_24" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="Thêm loại món ăn"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_nhanvien"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/layout_displayhome_XemNV"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:elevation="8dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/colorPrimary">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_baseline_account_circle_24" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_nhanvien"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="Thông tin nhân viên"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="200dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_danh_sach_mon_an"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/muli_black"
+                        android:text="Danh sách loại món ăn"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_displayhome_ViewAllCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Xem tất cả >" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_displayhome_LoaiMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:clipToPadding="false" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_danh_sach_mon_an"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/layout_danh_sach_doanh_thu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/muli_black"
+                        android:text="thống kê doanh thu"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txt_displayhome_ViewAllStatistic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xem tất cả >"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_displayhome_DonTrongNgay"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:clipToPadding="false" />
+
+            </LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/button"
+                    android:backgroundTint="@color/button"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="46dp"
+                    app:fabSize="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_baseline_menu_48"
+                    app:layout_anchor="@id/content"
+                    app:layout_anchorGravity="bottom|right|end"
+                    tools:ignore="NotSibling,UnknownId" />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/home"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:src="@drawable/ic_baseline_home_48"
+                    android:backgroundTint="@color/button"
+                    app:layout_constraintBottom_toTopOf="@+id/button"
+                    app:layout_constraintEnd_toEndOf="@+id/button"
+                    app:layout_constraintStart_toStartOf="@+id/button"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@color/button"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_home"
+                    android:layout_marginEnd="8dp"
+                    android:text="Trang chủ"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/muli_black"
+                    android:paddingRight="5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/home"
+                    app:layout_constraintEnd_toStartOf="@+id/home"
+                    app:layout_constraintTop_toTopOf="@+id/home"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/doanh_thu"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:backgroundTint="@color/button"
+                    app:layout_constraintBottom_toTopOf="@+id/home"
+                    app:layout_constraintEnd_toEndOf="@+id/home"
+                    android:src="@drawable/ic_baseline_leaderboard_48"
+                    app:layout_constraintStart_toStartOf="@+id/home"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@color/button"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_doanh_thu"
+                    android:layout_marginEnd="8dp"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/muli_black"
+                    android:paddingRight="5dp"
+                    android:text="Thống kê doanh thu"
+                    app:layout_constraintBottom_toBottomOf="@+id/doanh_thu"
+                    app:layout_constraintEnd_toStartOf="@+id/doanh_thu"
+                    app:layout_constraintTop_toTopOf="@+id/doanh_thu"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ban_an"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:backgroundTint="@color/button"
+                    app:layout_constraintBottom_toTopOf="@+id/doanh_thu"
+                    app:layout_constraintEnd_toEndOf="@+id/doanh_thu"
+                    app:layout_constraintStart_toStartOf="@+id/doanh_thu"
+                    android:src="@drawable/ic_baseline_airline_seat_legroom_normal_48"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:background="@color/button"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_ban_an"
+                    android:layout_marginEnd="8dp"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/muli_black"
+                    android:paddingRight="5dp"
+                    android:text="Quản lý bàn ăn"
+                    app:layout_constraintBottom_toBottomOf="@+id/ban_an"
+                    app:layout_constraintEnd_toStartOf="@+id/ban_an"
+                    app:layout_constraintTop_toTopOf="@+id/ban_an"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/loai_mon_an"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:backgroundTint="@color/button"
+                    android:src="@drawable/ic_baseline_fastfood_48"
+                    app:layout_constraintBottom_toTopOf="@+id/ban_an"
+                    app:layout_constraintEnd_toEndOf="@+id/ban_an"
+                    app:layout_constraintStart_toStartOf="@+id/ban_an"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@color/button"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_loai_mon_an"
+                    android:layout_marginEnd="8dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Quản lý loại món ăn"
+                    app:layout_constraintBottom_toBottomOf="@+id/loai_mon_an"
+                    app:layout_constraintEnd_toStartOf="@+id/loai_mon_an"
+                    app:layout_constraintTop_toTopOf="@+id/loai_mon_an"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/nhan_vien"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:backgroundTint="@color/button"
+                    android:src="@drawable/ic_baseline_person_48"
+                    app:layout_constraintBottom_toTopOf="@+id/loai_mon_an"
+                    app:layout_constraintEnd_toEndOf="@+id/loai_mon_an"
+                    app:layout_constraintStart_toStartOf="@+id/loai_mon_an"
+                    android:layout_marginBottom="8dp"/>
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@color/button"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_nhan_vien"
+                    android:layout_marginEnd="8dp"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/muli_black"
+                    android:paddingRight="5dp"
+                    android:text="Quản lý nhân viên"
+                    app:layout_constraintBottom_toBottomOf="@+id/nhan_vien"
+                    app:layout_constraintEnd_toStartOf="@+id/nhan_vien"
+                    app:layout_constraintTop_toTopOf="@+id/nhan_vien"
+                    android:layout_height="wrap_content"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
+
